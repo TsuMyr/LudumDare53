@@ -4,7 +4,7 @@ extends Control
 
 
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://scenes/game.tscn")
+	get_tree().change_scene_to_file("res://scenes/locations/building_complex/building_complex.tscn")
 
 func _on_settings_pressed():
 	settings.show()

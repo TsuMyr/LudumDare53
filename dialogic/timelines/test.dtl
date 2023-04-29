@@ -4,6 +4,6 @@ Ich bin Mr. Paket und bin zum testen hier.
 mr_paket: Das hier ist eine neue Textbox.
 mr_paket: Das hier ist noch eine. Mit besonders viel Text. Den ich mir jetzt einfallen lasse, damit es vielleicht nicht in die Textbox passt und man sieht was dann passiert. Ich laber einfach mal weiter weil ich nicht weiß wie viel Text in so eine Textbox passt. Das sieht man leider vorher nicht so wirklich. Deswegen schreib ich einfach immer weiter, und weiter, und weiter... Reicht das jetzt schon? Wer weiß das schon.. Vielleicht wird der Text auch nur einfach immer kleiner..
 Join girl 4
-girl (default): Halt die Klappe!
+girl (default): [wave]Halt die Klappe![/wave]
 girl: Du hast nun wirklich genug geredet. Nun redet mal ein anderer Character, mal gucken wie das mit zweien so aussieht.
 [signal]

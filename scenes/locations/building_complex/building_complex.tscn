@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://wf37gecg83pm"]
+
+[ext_resource type="Texture2D" uid="uid://ca27fsra86j4b" path="res://scenes/locations/building_complex/WIP_nachbar_bg.png" id="1_fqo4v"]
+[ext_resource type="PackedScene" uid="uid://es0kxxw0ecbx" path="res://scenes/gameplay/start_dialog_area.tscn" id="2_sqtae"]
+
+[node name="BuildingComplex" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("1_fqo4v")
+
+[node name="Door" parent="." instance=ExtResource("2_sqtae")]
+position = Vector2(893, 407)
+timeline_name = "test"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Door"]
+position = Vector2(0, -1)
+polygon = PackedVector2Array(-69, 291, -70, -155, 107, -150, 107, 265)
+
+[node name="Fence" parent="." instance=ExtResource("2_sqtae")]
+position = Vector2(1324, 587)
+timeline_name = "test2"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Fence"]
+polygon = PackedVector2Array(-87, 111, -87, -79, -26, -99, 11, -99, 55, -85, 95, -64, 96, 157)
+
+[node name="Letterbox" parent="." instance=ExtResource("2_sqtae")]
+position = Vector2(718, 521)
+timeline_name = "test3"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Letterbox"]
+polygon = PackedVector2Array(-94, -46, 57, -56, 78, -44, 78, 40, -73, 54, -93, 50)
