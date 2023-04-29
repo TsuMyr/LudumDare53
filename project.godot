@@ -28,8 +28,7 @@ editor/current_resources={
 "Timeline Editor": "res://dialogic/timelines/test2.dtl"
 }
 editor/last_resources=PackedStringArray("res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "res://dialogic/timelines/test2.dtl", "res://dialogic/timelines/test3.dtl", "")
-editor/visual_timeline_editor_sidebar=200.0
-editor/current_timeline_path="res://dialogic/timelines/test2.dtl"
+editor/last/resources=["res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch"]
 animations/join_default_length=0.5
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
@@ -46,16 +45,13 @@ layout/layout_scene="res://addons/dialogic/Events/DefaultStyles/Default/Dialogic
 editor/visual_timeline_editor_sidebar=200.0
 editor/current_timeline_path="res://dialogic/timelines/test.dtl"
 glossary/default_case_sensitive=true
-layout/mode=0
-editor/last/resources=["res://dialogic/characters/test.dch", "res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch"]
-layout/export_overrides={
-"text_alignment": "0"
-}
 variables={
 "favourite_color": "",
 "input": ""
 }
-layout/layout_scene="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.tscn"
+layout/export_overrides={
+"text_alignment": "0"
+}
 editor/layout/mode=2
 
 [editor_plugins]

@@ -1,0 +1,86 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0glh3gevya44"]
+
+[ext_resource type="Texture2D" uid="uid://brx4fg1sf2n1f" path="res://assets/ui/inventory.png" id="1_52n8u"]
+[ext_resource type="Texture2D" uid="uid://c8o8q07f2yqar" path="res://assets/ui/base.png" id="2_op3qt"]
+[ext_resource type="Texture2D" uid="uid://swhfoe2807o5" path="res://assets/ui/inventory_ slot.png" id="3_4wf5j"]
+[ext_resource type="Texture2D" uid="uid://bn823eu7y36jd" path="res://assets/ui/letter.png" id="4_iixgc"]
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -232.0
+offset_top = -176.0
+offset_right = -129.0
+offset_bottom = -73.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("1_52n8u")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_right = 317.0
+offset_bottom = 1512.0
+grow_horizontal = 0
+grow_vertical = 2
+scale = Vector2(0.3, 0.3)
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("2_op3qt")
+region_rect = Rect2(0, 0, 500, 500)
+patch_margin_left = 159
+patch_margin_top = 167
+patch_margin_right = 163
+patch_margin_bottom = 158
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 26.6667
+offset_top = 106.667
+offset_right = -29.3333
+offset_bottom = -109.333
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/NinePatchRect/ScrollContainer"]
+clip_contents = true
+layout_mode = 2
+theme_override_constants/v_separation = 39
+
+[node name="inventory_slot" type="TextureRect" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_4wf5j")
+stretch_mode = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer/inventory_slot"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/NinePatchRect/ScrollContainer/GridContainer/inventory_slot/CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_iixgc")
