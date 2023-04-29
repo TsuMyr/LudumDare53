@@ -22,14 +22,13 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 editor/character_preview_mode=1
-editor/current_editor=&"GlossaryEditor"
+editor/current_editor=&"VariablesEditor"
 editor/current_resources={
 "Character Editor": "res://dialogic/characters/girl/girl.dch",
 "Timeline Editor": "res://dialogic/timelines/test.dtl"
 }
 editor/last_resources=PackedStringArray("res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch", "")
-editor/visual_timeline_editor_sidebar=200.0
-editor/current_timeline_path="res://dialogic/timelines/test.dtl"
+editor/last/resources=[]
 animations/join_default_length=0.5
 animations/leave_default_length=0.5
 animations/leave_default_wait=true
@@ -41,9 +40,12 @@ text/speed=0.01
 text/skippable=true
 text/autocontinue_delay=1.0
 text/autopauses={}
-glossary/default_case_sensitive=true
 layout/mode=0
-editor/last/resources=["res://dialogic/characters/test.dch", "res://dialogic/characters/mr_paket/mr_paket.dch", "res://dialogic/timelines/test.dtl", "res://dialogic/characters/girl/girl.dch"]
+layout/layout_scene="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.tscn"
+editor/visual_timeline_editor_sidebar=200.0
+editor/current_timeline_path="res://dialogic/timelines/test.dtl"
+glossary/default_case_sensitive=true
+variables={}
 
 [editor_plugins]
 
