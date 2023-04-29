@@ -1,4 +1,17 @@
-[gd_scene format=3 uid="uid://bqxer5ekgpsyw"]
+[gd_scene load_steps=3 format=3 uid="uid://bqxer5ekgpsyw"]
+
+[ext_resource type="Script" path="res://script/settings.gd" id="1_ryncp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ug7af"]
+bg_color = Color(0.27451, 0.27451, 0.27451, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [node name="settings" type="Control"]
 layout_mode = 3
@@ -7,6 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ryncp")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -19,6 +33,7 @@ offset_right = -346.0
 offset_bottom = -130.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ug7af")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
 layout_mode = 2
@@ -65,3 +80,9 @@ text = "Music
 
 [node name="HSlider" type="HSlider" parent="Panel/VBoxContainer"]
 layout_mode = 2
+
+[node name="back" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="Panel/VBoxContainer/back" to="." method="_on_button_pressed"]

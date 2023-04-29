@@ -22,9 +22,23 @@ Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
 [dialogic]
 
 editor/character_preview_mode=0
-editor/current_editor=&"HomePage"
+editor/current_editor=&"Layout"
 editor/current_resources={}
 editor/last_resources=PackedStringArray("")
+editor/last/resources=[]
+animations/join_default_length=0.5
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/join_default_wait=true
+choices/autofocus_first=true
+choices/delay=0.2
+save/autosave_delay=60.0
+text/speed=0.01
+text/skippable=true
+text/autocontinue_delay=1.0
+text/autopauses={}
+layout/mode=0
+layout/layout_scene="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.tscn"
 
 [editor_plugins]
 
